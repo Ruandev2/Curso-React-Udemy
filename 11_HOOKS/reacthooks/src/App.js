@@ -1,23 +1,21 @@
+//  config react router
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-
-import "./App.css";
-
-import About from "./pages/About";
-import Home from "./pages/Home";
-
+//css
+import './App.css';
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
 import { HookUseContext } from "./components/HookUseContext";
-
 function App() {
   return (
     <div className="App">
       <HookUseContext>
-        <h1>React Hooks</h1>
-
         <BrowserRouter>
           <ul>
             <li>
               <Link to="/">Home</Link>
             </li>
+          </ul>
+          <ul>
             <li>
               <Link to="/about">About</Link>
             </li>
